@@ -24,7 +24,6 @@ nav{
 /* container interno alla nav con il logo ed i menù */
 .container{
   display: flex;
-  justify-content: space-around;
   padding: 20px 0;
   width: 100vw;
 }
@@ -33,10 +32,53 @@ nav{
   height: 28px;
   width: 121px;
 }
+.tipologia-conto ul, .caratteristiche ul{
+  display: flex;
+  list-style: none;
+}
+
+.caratteristiche{
+  margin-left: 332px;
+}
+
+li a{
+  margin-right: 32px;
+  height: 100%;
+  color:rgb(25, 28, 31);
+  font-family:"Basier Circle", sans-serif;
+  font-weight:500;
+  height:26px;
+  line-height:26.4px;
+  margin-right:32px;
+  opacity:0.5;
+}
 
 #BtnGet{
-  background-color: rgb(235, 0, 141);
+  height: 44px;
+  width: 135px;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
   color: white;
+  margin-bottom: 0.5rem;
+  background-color: rgb(235, 0, 141);
+  border-radius: 2rem;
+  transition: all 0.2s ease 0s;
+  padding: 0.625em 1.5em;
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #2B3F58;
 }
 
 /* blocco centrale pagina */
@@ -77,7 +119,7 @@ nav{
     max-width: 253px;
     max-height: 450px;
     z-index: 1;
-    
+
 }
 #credit_card{
   position: absolute;
