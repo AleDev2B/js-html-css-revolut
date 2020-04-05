@@ -13,9 +13,54 @@ body {
 
 /* impostazione della nav */
 
+nav{
+  display: flex;
+  justify-content: space-around;
+  margin:auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
+#logo{
+  width: 121px;
+  height: 28px;
+}
 
-/* container interno alla nav con il logo ed i menù */
+ul{
+  display: inline-block;
+  position: absolute;
+  top:33px;
+}
+
+ul li {
+  list-style-type: none;
+  /* display: none; */
+}
+
+.account-list{
+  left: 48%;
+}
+.products-list{
+  left: 59%;
+}
+
+.company-list{
+  left: 69%;
+}
+
+.help-list{
+  left: 80%;
+}
+
+.menu-horizontal{
+  display: contents;
+}
+
+.menu-hamburger{
+  display: none;
+}
 
 
 /* blocco centrale pagina */
