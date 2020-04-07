@@ -25,7 +25,7 @@ nav{
 
 #logo{
   width: 121px;
-  height: 28px;
+  height: auto;
 }
 
 ul{
@@ -36,7 +36,11 @@ ul{
 
 ul li {
   list-style-type: none;
-  /* display: none; */
+  display: block;
+}
+
+#account:hover ul li {
+  display: block;
 }
 
 .account-list{
@@ -74,3 +78,13 @@ ul li {
 
 
 /* pagina interna */
+
+@media screen and (max-width: 992px) {
+  .logo{
+    position: absolute;
+    left: 18px;
+  }
+  .menu-horizontal,.tipologia-conto{
+    display: none;
+  }
+}
